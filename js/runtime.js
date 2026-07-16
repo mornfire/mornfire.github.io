@@ -1,7 +1,7 @@
 // 网站运行时间统计
 (function() {
   // 设置服务器开服日期（年, 月-1, 日, 时, 分, 秒）
-  var startDate = new Date(2026, 3, 20, 0, 0, 0); // 2026年4月20日 00:00:00
+  var startDate = new Date(2025, 3, 20, 0, 0, 0);
 
   function updateRuntime() {
     var now = new Date();
