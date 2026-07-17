@@ -1,3 +1,4 @@
+https://www.mfoc-server.top/supporters/index.html
 https://www.mfoc-server.top/fortune/index.html
 https://www.mfoc-server.top/roadmap/index.html
 https://www.mfoc-server.top/ai/index.html
@@ -5,7 +6,6 @@ https://www.mfoc-server.top/showcase/index.html
 https://www.mfoc-server.top/dashboard/index.html
 https://www.mfoc-server.top/plate/index.html
 https://www.mfoc-server.top/plate.html
-https://www.mfoc-server.top/supporters/index.html
 https://www.mfoc-server.top/posts/index.html
 https://www.mfoc-server.top/weekly/index.html
 https://www.mfoc-server.top/dependencies/index.html
