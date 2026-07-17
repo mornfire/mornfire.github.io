@@ -19,23 +19,25 @@
   <meta name="author" content="MFoC 管理组">
   <meta name="keywords" content="">
   
-    <meta name="description" content="🎲 车牌摇号器MFoC 服务器专用车牌摇号工具。  📥 下载点击下载 车牌摇号器(记得把txt后缀改html)  使用说明 点击上方链接跳转网盘 下载 HTML 文件到本地 用浏览器打开即可使用 无需联网，纯本地运行">
+    <meta name="description" content="🖥️ 服务器桌面实时信息一览。  服务器状态  当前时间   function updateClock() {   const now &#x3D; new Date();   const s &#x3D; now.getFullYear() + &#39;-&#39; +     String(now.getMonth()+1).padStart(2,&#39;0&#39;) + &#39;-&#39; +     String(now.getDate()).">
 <meta property="og:type" content="website">
-<meta property="og:title" content="车牌摇号器">
-<meta property="og:url" content="https://www.mfoc-server.top/plate/index.html">
+<meta property="og:title" content="服务器桌面">
+<meta property="og:url" content="https://www.mfoc-server.top/dashboard/index.html">
 <meta property="og:site_name" content="MFoC 服务器">
-<meta property="og:description" content="🎲 车牌摇号器MFoC 服务器专用车牌摇号工具。  📥 下载点击下载 车牌摇号器(记得把txt后缀改html)  使用说明 点击上方链接跳转网盘 下载 HTML 文件到本地 用浏览器打开即可使用 无需联网，纯本地运行">
+<meta property="og:description" content="🖥️ 服务器桌面实时信息一览。  服务器状态  当前时间   function updateClock() {   const now &#x3D; new Date();   const s &#x3D; now.getFullYear() + &#39;-&#39; +     String(now.getMonth()+1).padStart(2,&#39;0&#39;) + &#39;-&#39; +     String(now.getDate()).">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-07-16T15:19:55.779Z">
-<meta property="article:modified_time" content="2026-07-16T15:19:55.779Z">
+<meta property="og:image" content="https://www.mclists.cn/server-banner.php?sid=9887&theme=minecraft&format=png">
+<meta property="article:published_time" content="2026-07-17T03:46:15.664Z">
+<meta property="article:modified_time" content="2026-07-17T03:46:15.664Z">
 <meta property="article:author" content="MFoC 管理组">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.mclists.cn/server-banner.php?sid=9887&theme=minecraft&format=png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>车牌摇号器 - MFoC 服务器</title>
+  <title>服务器桌面 - MFoC 服务器</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -634,7 +636,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="车牌摇号器"></span>
+            <span id="subtitle" data-typed-text="服务器桌面"></span>
           
         </div>
 
@@ -664,16 +666,62 @@
                 
 
 <article class="page-content">
-  <h1 id="🎲-车牌摇号器"><a href="#🎲-车牌摇号器" class="headerlink" title="🎲 车牌摇号器"></a>🎲 车牌摇号器</h1><p>MFoC 服务器专用车牌摇号工具。</p>
+  <h1 id="🖥️-服务器桌面"><a href="#🖥️-服务器桌面" class="headerlink" title="🖥️ 服务器桌面"></a>🖥️ 服务器桌面</h1><p>实时信息一览。</p>
 <hr>
-<h2 id="📥-下载"><a href="#📥-下载" class="headerlink" title="📥 下载"></a>📥 下载</h2><p><a target="_blank" rel="noopener" href="https://wwaxr.lanzouw.com/i4q603wtnfcf">点击下载 车牌摇号器(记得把txt后缀改html)</a></p>
+<h2 id="服务器状态"><a href="#服务器状态" class="headerlink" title="服务器状态"></a>服务器状态</h2><p><img src="https://www.mclists.cn/server-banner.php?sid=9887&theme=minecraft&format=png" srcset="/img/loading.gif" lazyload alt="服务器状态"></p>
 <hr>
-<h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><ol>
-<li>点击上方链接跳转网盘</li>
-<li>下载 HTML 文件到本地</li>
-<li>用浏览器打开即可使用</li>
-<li>无需联网，纯本地运行</li>
-</ol>
+<h2 id="当前时间"><a href="#当前时间" class="headerlink" title="当前时间"></a>当前时间</h2><div id="clock" style="font-size:32px;font-weight:700;color:#7CB342;font-family:'Courier New',monospace;background:#1a1a2e;padding:16px 24px;border-radius:12px;display:inline-block;border:1px solid #2a2a4a;"></div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  const s = now.getFullYear() + '-' +
+    String(now.getMonth()+1).padStart(2,'0') + '-' +
+    String(now.getDate()).padStart(2,'0') + ' ' +
+    String(now.getHours()).padStart(2,'0') + ':' +
+    String(now.getMinutes()).padStart(2,'0') + ':' +
+    String(now.getSeconds()).padStart(2,'0');
+  document.getElementById('clock').textContent = s;
+}
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+
+<hr>
+<h2 id="在线玩家"><a href="#在线玩家" class="headerlink" title="在线玩家"></a>在线玩家</h2><p><em>（暂无数据，待接入）</em></p>
+<hr>
+<h2 id="服务器信息"><a href="#服务器信息" class="headerlink" title="服务器信息"></a>服务器信息</h2><table>
+<thead>
+<tr>
+<th align="left">项目</th>
+<th align="left">内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">版本</td>
+<td align="left">1.21.1 NeoForge</td>
+</tr>
+<tr>
+<td align="left">模组数量</td>
+<td align="left">270+</td>
+</tr>
+<tr>
+<td align="left">核心</td>
+<td align="left">机械动力 Create</td>
+</tr>
+<tr>
+<td align="left">开服时间</td>
+<td align="left">2026-04-20</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="快速链接"><a href="#快速链接" class="headerlink" title="快速链接"></a>快速链接</h2><ul>
+<li><a href="/">官网首页</a></li>
+<li><a href="/categories/%E5%85%AC%E5%91%8A/">服务器公告</a></li>
+<li><a href="/features/">玩法介绍</a></li>
+<li><a href="/join/">加入我们</a></li>
+<li><a href="/showcase/">玩家展示墙</a></li>
+</ul>
 
 
   
