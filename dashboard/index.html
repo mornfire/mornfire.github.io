@@ -1,0 +1,882 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEXT79qWI6jO2Q0khcW9v-xHVVlm3WINQACoCYAAm1OwFaerNTVOiUi_T0E.jpg">
+  <link rel="icon" href="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEXT79qWI6jO2Q0khcW9v-xHVVlm3WINQACoCYAAm1OwFaerNTVOiUi_T0E.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#16213e">
+  <meta name="author" content="MFoC 管理组">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="🖥️ 服务器桌面实时信息一览。  服务器状态  当前时间   function updateClock() {   const now &#x3D; new Date();   const s &#x3D; now.getFullYear() + &#39;-&#39; +     String(now.getMonth()+1).padStart(2,&#39;0&#39;) + &#39;-&#39; +     String(now.getDate()).">
+<meta property="og:type" content="website">
+<meta property="og:title" content="服务器桌面">
+<meta property="og:url" content="https://www.mfoc-server.top/dashboard/index.html">
+<meta property="og:site_name" content="MFoC 服务器">
+<meta property="og:description" content="🖥️ 服务器桌面实时信息一览。  服务器状态  当前时间   function updateClock() {   const now &#x3D; new Date();   const s &#x3D; now.getFullYear() + &#39;-&#39; +     String(now.getMonth()+1).padStart(2,&#39;0&#39;) + &#39;-&#39; +     String(now.getDate()).">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.mclists.cn/server-banner.php?sid=9887&theme=minecraft&format=png">
+<meta property="article:published_time" content="2026-07-17T03:46:15.664Z">
+<meta property="article:modified_time" content="2026-07-17T03:46:15.664Z">
+<meta property="article:author" content="MFoC 管理组">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.mclists.cn/server-banner.php?sid=9887&theme=minecraft&format=png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>服务器桌面 - MFoC 服务器</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"www.mfoc-server.top","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#7CB342","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 60vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>MFoC 服务器 丨 纯公益服务器</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/%E5%85%AC%E5%91%8A/" target="_self">
+                <i class="iconfont icon-notice"></i>
+                <span>服务器公告</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/features/" target="_self">
+                <i class="iconfont icon-game"></i>
+                <span>玩法介绍</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/join/" target="_self">
+                <i class="iconfont icon-join"></i>
+                <span>加入我们</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/recruit/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>招募</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-link"></i>
+                <span>友链</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/friends/" target="_self">
+                    <i class="iconfont icon-link"></i>
+                    <span>友情链接</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/dependencies/" target="_self">
+                    <i class="iconfont icon-tool"></i>
+                    <span>依赖项目</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-more"></i>
+                <span>更多</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/showcase/" target="_self">
+                    <i class="iconfont icon-image"></i>
+                    <span>展示墙</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/mods/" target="_self">
+                    <i class="iconfont icon-book"></i>
+                    <span>模组百科</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/wallpapers/" target="_self">
+                    <i class="iconfont icon-image"></i>
+                    <span>壁纸</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/faq/" target="_self">
+                    <i class="iconfont icon-help"></i>
+                    <span>常见问题</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/quotes/" target="_self">
+                    <i class="iconfont icon-chat"></i>
+                    <span>玩家语录</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/milestones/" target="_self">
+                    <i class="iconfont icon-flag"></i>
+                    <span>里程碑</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/weekly/" target="_self">
+                    <i class="iconfont icon-pen"></i>
+                    <span>服主周记</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/dashboard/" target="_self">
+                    <i class="iconfont icon-dashboard"></i>
+                    <span>服务器桌面</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/posts/" target="_self">
+                    <i class="iconfont icon-pen"></i>
+                    <span>玩家投稿</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/plate/" target="_self">
+                    <i class="iconfont icon-dice"></i>
+                    <span>车牌摇号</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/supporters/" target="_self">
+                    <i class="iconfont icon-heart"></i>
+                    <span>支持者名单</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/about/" target="_self">
+                    <i class="iconfont icon-user-fill"></i>
+                    <span>关于</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/%E5%85%AC%E5%91%8A/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-notice"></i>
+                  <span>服务器公告</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/features/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-game"></i>
+                  <span>玩法介绍</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/join/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-join"></i>
+                  <span>加入我们</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/recruit/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>招募</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            
+            <div class="col-12 mobile-grid-group-header">
+              <i class="iconfont icon-link"></i>
+              <span>友链</span>
+            </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/friends/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-link"></i>
+                    <span>友情链接</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/dependencies/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-tool"></i>
+                    <span>依赖项目</span>
+                  </div>
+                </a>
+              </div>
+            
+          
+        
+          
+          
+          
+          
+            
+            <div class="col-12 mobile-grid-group-header">
+              <i class="iconfont icon-more"></i>
+              <span>更多</span>
+            </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/showcase/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-image"></i>
+                    <span>展示墙</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/mods/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-book"></i>
+                    <span>模组百科</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/wallpapers/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-image"></i>
+                    <span>壁纸</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/faq/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-help"></i>
+                    <span>常见问题</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/quotes/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-chat"></i>
+                    <span>玩家语录</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/milestones/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-flag"></i>
+                    <span>里程碑</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/weekly/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-pen"></i>
+                    <span>服主周记</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/dashboard/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-dashboard"></i>
+                    <span>服务器桌面</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/posts/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-pen"></i>
+                    <span>玩家投稿</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/plate/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-dice"></i>
+                    <span>车牌摇号</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/supporters/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-heart"></i>
+                    <span>支持者名单</span>
+                  </div>
+                </a>
+              </div>
+            
+              
+              
+              
+              <div class="col-4 mobile-grid-cell">
+                <a href="/about/" target="_self">
+                  <div class="mobile-grid-item">
+                    <i class="iconfont icon-user-fill"></i>
+                    <span>关于</span>
+                  </div>
+                </a>
+              </div>
+            
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEXTwJqWIkGcaLLT-r8riiBqwgvofFqBQAC3yUAAm1OwFb_q7BqRKDsrj0E.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="服务器桌面"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<article class="page-content">
+  <h1 id="🖥️-服务器桌面"><a href="#🖥️-服务器桌面" class="headerlink" title="🖥️ 服务器桌面"></a>🖥️ 服务器桌面</h1><p>实时信息一览。</p>
+<hr>
+<h2 id="服务器状态"><a href="#服务器状态" class="headerlink" title="服务器状态"></a>服务器状态</h2><p><img src="https://www.mclists.cn/server-banner.php?sid=9887&theme=minecraft&format=png" srcset="/img/loading.gif" lazyload alt="服务器状态"></p>
+<hr>
+<h2 id="当前时间"><a href="#当前时间" class="headerlink" title="当前时间"></a>当前时间</h2><div id="clock" style="font-size:32px;font-weight:700;color:#7CB342;font-family:'Courier New',monospace;background:#1a1a2e;padding:16px 24px;border-radius:12px;display:inline-block;border:1px solid #2a2a4a;"></div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  const s = now.getFullYear() + '-' +
+    String(now.getMonth()+1).padStart(2,'0') + '-' +
+    String(now.getDate()).padStart(2,'0') + ' ' +
+    String(now.getHours()).padStart(2,'0') + ':' +
+    String(now.getMinutes()).padStart(2,'0') + ':' +
+    String(now.getSeconds()).padStart(2,'0');
+  document.getElementById('clock').textContent = s;
+}
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+
+<hr>
+<h2 id="在线玩家"><a href="#在线玩家" class="headerlink" title="在线玩家"></a>在线玩家</h2><p><em>（暂无数据，待接入）</em></p>
+<hr>
+<h2 id="服务器信息"><a href="#服务器信息" class="headerlink" title="服务器信息"></a>服务器信息</h2><table>
+<thead>
+<tr>
+<th align="left">项目</th>
+<th align="left">内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">版本</td>
+<td align="left">1.21.1 NeoForge</td>
+</tr>
+<tr>
+<td align="left">模组数量</td>
+<td align="left">270+</td>
+</tr>
+<tr>
+<td align="left">核心</td>
+<td align="left">机械动力 Create</td>
+</tr>
+<tr>
+<td align="left">开服时间</td>
+<td align="left">2026-04-20</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="快速链接"><a href="#快速链接" class="headerlink" title="快速链接"></a>快速链接</h2><ul>
+<li><a href="/">官网首页</a></li>
+<li><a href="/categories/%E5%85%AC%E5%91%8A/">服务器公告</a></li>
+<li><a href="/features/">玩法介绍</a></li>
+<li><a href="/join/">加入我们</a></li>
+<li><a href="/showcase/">玩家展示墙</a></li>
+</ul>
+
+
+  
+
+</article>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+           <div style="max-width:1200px;margin:20px auto 0;padding:8px 15px;background:#2a2a4a;border-radius:6px;overflow:hidden;border:1px solid #7CB342;text-align:center;"> <div style="display:inline-block;white-space:nowrap;animation:scrollBanner 20s linear infinite;font-size:15px;color:#a0a0a0;"> <span style="margin:0 40px;">📢 广告位招租 — 联系 QQ群：1101072742</span> <span style="margin:0 40px;">🎮 欢迎合作 — 服务器资源可抵扣</span> <span style="margin:0 40px;">📢 广告位招租 — 联系 QQ群：1101072742</span> <span style="margin:0 40px;">🎮 欢迎合作 — 服务器资源可抵扣</span> </div> </div> <style> @keyframes scrollBanner { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } } </style> 
+        </div>
+      </div>
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <div style="margin-bottom:6px;"> <img src="https://www.mclists.cn/server-banner.php?sid=9887&theme=minecraft&format=png" srcset="/img/loading.gif" lazyload alt="服务器状态" style="max-width:45%;height:auto;border-radius:4px;display:block;margin:0 auto;opacity:0.85;"> </div> <div>© 2026 MFoC 服务器</div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
