@@ -4,6 +4,60 @@
   
   
   <entry>
+    <title>官网二期功能更新完成</title>
+    <link href="/2026/07/17/%E5%AE%98%E7%BD%91%E4%BA%8C%E6%9C%9F%E5%8A%9F%E8%83%BD%E6%9B%B4%E6%96%B0%E5%AE%8C%E6%88%90/"/>
+    <url>/2026/07/17/%E5%AE%98%E7%BD%91%E4%BA%8C%E6%9C%9F%E5%8A%9F%E8%83%BD%E6%9B%B4%E6%96%B0%E5%AE%8C%E6%88%90/</url>
+    
+    <content type="html"><![CDATA[<h1 id="🎉-MFoC-官网二期功能更新完成"><a href="#🎉-MFoC-官网二期功能更新完成" class="headerlink" title="🎉 MFoC 官网二期功能更新完成"></a>🎉 MFoC 官网二期功能更新完成</h1><p>官网新一轮功能更新已上线！</p><hr><h2 id="🆕-新增内容"><a href="#🆕-新增内容" class="headerlink" title="🆕 新增内容"></a>🆕 新增内容</h2><table><thead><tr><th align="left">功能</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left">🎋 服务器运势签</td><td align="left">每日随机一句 MC 风格运势</td></tr><tr><td align="left">🗺️ 未来计划看板</td><td align="left">查看服务器正在规划的内容</td></tr><tr><td align="left">🤖 AI 助手</td><td align="left">Chatbase AI「小焰」在线答疑</td></tr></tbody></table><hr><h2 id="🔧-优化调整"><a href="#🔧-优化调整" class="headerlink" title="🔧 优化调整"></a>🔧 优化调整</h2><ul><li>导航菜单整理，“更多”下拉收纳</li><li>页脚恢复访问统计</li><li>各页面横幅统一</li></ul><hr><h2 id="📋-当前官网功能一览"><a href="#📋-当前官网功能一览" class="headerlink" title="📋 当前官网功能一览"></a>📋 当前官网功能一览</h2><ul><li>服务器公告</li><li>玩法介绍</li><li>加入我们</li><li>招募</li><li>玩家展示墙</li><li>模组百科</li><li>常见问题</li><li>玩家语录</li><li>服务器桌面</li><li>服务器壁纸</li><li>广告合作</li><li>友链&#x2F;依赖项目</li><li>里程碑</li><li>AI 助手</li><li>运势签</li><li>未来计划</li></ul><hr><h2 id="💬-反馈"><a href="#💬-反馈" class="headerlink" title="💬 反馈"></a>💬 反馈</h2><p>如果遇到任何问题，或对官网有建议，欢迎在评论区留言！</p><hr><p><em>MFoC 管理组</em></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>公告</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>官网</tag>
+      
+      <tag>更新</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>MFoC 官网一期上线公告</title>
+    <link href="/2026/07/16/MFoC-%E5%AE%98%E7%BD%91%E4%B8%80%E6%9C%9F%E4%B8%8A%E7%BA%BF%E5%85%AC%E5%91%8A/"/>
+    <url>/2026/07/16/MFoC-%E5%AE%98%E7%BD%91%E4%B8%80%E6%9C%9F%E4%B8%8A%E7%BA%BF%E5%85%AC%E5%91%8A/</url>
+    
+    <content type="html"><![CDATA[<h1 id="🚀-MFoC-官网一期正式上线"><a href="#🚀-MFoC-官网一期正式上线" class="headerlink" title="🚀 MFoC 官网一期正式上线"></a>🚀 MFoC 官网一期正式上线</h1><p>MFoC 服务器官网于今日正式开放！</p><p>作为一期版本，我们已完成以下基础功能：</p><hr><h2 id="🏗️-一期功能清单"><a href="#🏗️-一期功能清单" class="headerlink" title="🏗️ 一期功能清单"></a>🏗️ 一期功能清单</h2><ul><li>首页横幅与导航菜单</li><li>服务器公告系统</li><li>玩法介绍</li><li>加入我们</li><li>招募</li><li>关于页面 + 版权声明</li><li>玩家展示墙</li><li>模组百科</li><li>常见问题 FAQ</li><li>玩家语录</li><li>里程碑&#x2F;成就系统</li><li>服务器桌面</li><li>服务器壁纸</li><li>广告合作</li><li>友链&#x2F;依赖项目</li><li>支持者名单</li><li>Giscus 评论区</li><li>不蒜子访问统计</li><li>服务器 MOTD 状态图</li><li>滚动横幅广告位</li></ul><hr><h2 id="🎨-视觉风格"><a href="#🎨-视觉风格" class="headerlink" title="🎨 视觉风格"></a>🎨 视觉风格</h2><ul><li>MC 风格深色主题</li><li>草绿色点缀</li><li>所有页面横幅统一</li></ul><hr><h2 id="🔧-技术栈"><a href="#🔧-技术栈" class="headerlink" title="🔧 技术栈"></a>🔧 技术栈</h2><ul><li>Hexo + Fluid 主题</li><li>GitHub Pages 托管</li><li>Cloudflare DNS</li><li>Giscus 评论</li></ul><hr><h2 id="💬-反馈"><a href="#💬-反馈" class="headerlink" title="💬 反馈"></a>💬 反馈</h2><p>官网将持续更新，欢迎大家提出建议！</p><hr><p><em>MFoC 管理组</em></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>公告</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>官网</tag>
+      
+      <tag>上线</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MFoC 服务器官网正式上线</title>
     <link href="/2026/07/16/MFoC-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%98%E7%BD%91%E6%AD%A3%E5%BC%8F%E5%BC%80%E6%94%BE/"/>
     <url>/2026/07/16/MFoC-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%98%E7%BD%91%E6%AD%A3%E5%BC%8F%E5%BC%80%E6%94%BE/</url>
