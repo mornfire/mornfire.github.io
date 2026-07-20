@@ -1028,7 +1028,7 @@
             <div class="pay-title">主服务器捐款通道</div>
             <div class="pay-sub">您的支持让服务器持续运行</div>
             <div class="pay-img">
-                <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEXIoZqVOlCx5APpwOSZqiP8Z6JgwwYAQACKywAApZHqFZACKo1xkDr4zwE.jpg" srcset="/img/loading.gif" lazyload alt="付款码" />
+                <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEXIoZqVOlCx5APpwOSZqiP8Z6JgwwYAQACKywAApZHqFZACKo1xkDr4zwE.jpg" srcset="/img/loading.gif" lazyload alt="付款码">
             </div>
             <div class="pay-remark">
                 💡 付款时请备注 <strong>谁人赞助</strong>，感谢支持！
@@ -1038,10 +1038,10 @@
 
     <!-- ===== 登录/注册界面 ===== -->
     <div class="auth-box" id="authBox">
-        <h2 id="authTitle">🔐 登录</h2>
+        <h2><span id="登录">🔐 登录</span></h2>
         <div class="subtitle" id="authSub">登录以使用摇号器</div>
-        <input id="username" type="text" placeholder="用户名" maxlength="16" autofocus />
-        <input id="password" type="password" placeholder="密码" maxlength="32" />
+        <input id="username" type="text" placeholder="用户名" maxlength="16" autofocus>
+        <input id="password" type="password" placeholder="密码" maxlength="32">
         <button class="auth-btn" id="authBtn" onclick="handleAuth()">登录</button>
         <div class="err-msg" id="authErr"></div>
         <div class="switch-row">
@@ -1057,7 +1057,7 @@
     <!-- ===== 主界面 ===== -->
     <div class="container" id="mainBox">
         <div class="header-area">
-            <h1 id="🎲-后五位摇号器-<small>mfoc</small>">🎲 后五位摇号器 <small>MFoC</small></h1>
+            <h1 id="<span-id="后五位摇号器-mfoc">🎲-后五位摇号器-<small>mfoc</small></span>"><span id="后五位摇号器-mfoc">🎲 后五位摇号器 <small>MFoC</small></span></h1>
             <!-- 捐款通道链接 -->
             <div class="donate-link">
                 <a href="javascript:void(0)" onclick="openPayModal()">💛 服务器捐款通道</a>
@@ -1093,7 +1093,7 @@
         </div>
 
         <div class="history">
-            <h3><span>📋 摇号历史（最多10条）</span> <button onclick="doClear()">清空</button></h3>
+            <h3><span id="摇号历史最多10条-清空"><span>📋 摇号历史（最多10条）</span> <button onclick="doClear()">清空</button></span></h3>
             <div class="history-list" id="historyList"><span class="history-empty">还没有摇号记录，点击"随机摇号"开始</span></div>
         </div>
     </div>
