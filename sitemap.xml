@@ -299,6 +299,20 @@
 
   
   <url>
+    <loc>https://www.mfoc-server.top/tags/%E5%AE%98%E7%BD%91/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mfoc-server.top/tags/%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.mfoc-server.top/tags/%E6%B4%BB%E5%8A%A8/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -314,20 +328,6 @@
   
   <url>
     <loc>https://www.mfoc-server.top/tags/%E5%91%A8%E5%B9%B4%E5%BA%86/</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mfoc-server.top/tags/%E5%AE%98%E7%BD%91/</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mfoc-server.top/tags/%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
