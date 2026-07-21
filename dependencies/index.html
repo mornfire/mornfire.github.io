@@ -80,8 +80,39 @@
 
 
   
-<meta name="generator" content="Hexo 8.1.2"></head>
 
+  <!-- 浏览器语言检测与重定向 -->
+  <script>
+  (function() {
+    var lang = navigator.language || navigator.userLanguage || 'en';
+    var baseLang = lang.split('-')[0];
+    
+    // 支持的语言映射
+    var langMap = {
+      'zh': '/zh',
+      'en': '/en'
+    };
+    
+    var path = window.location.pathname;
+    var isLangPath = false;
+    for (var key in langMap) {
+      if (path.indexOf(langMap[key]) === 0) {
+        isLangPath = true;
+        break;
+      }
+    }
+    
+    if (!isLangPath) {
+      var targetLang = langMap[baseLang] || '/en';
+      var newPath = targetLang + path;
+      if (path === '/') {
+        newPath = targetLang + '/';
+      }
+      window.location.href = newPath;
+    }
+  })();
+  </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>
   
@@ -771,7 +802,7 @@
 <tr>
 <td align="left">环境&#x2F;域名&#x2F;代码&#x2F;重写改错&#x2F;AI调教&#x2F;灵感执行</td>
 <td align="left">Mornfire</td>
-<td align="left"><a href="mailto:&#x6d;&#x6f;&#114;&#110;&#102;&#x69;&#114;&#101;&#64;&#79;&#117;&#116;&#x6c;&#111;&#111;&#x6b;&#46;&#99;&#x6f;&#x6d;">mornfire@Outlook.com</a></td>
+<td align="left"><a href="mailto:&#x6d;&#111;&#114;&#x6e;&#x66;&#x69;&#114;&#x65;&#64;&#x4f;&#117;&#116;&#108;&#x6f;&#111;&#107;&#46;&#x63;&#x6f;&#109;">mornfire@Outlook.com</a></td>
 </tr>
 </tbody></table>
 

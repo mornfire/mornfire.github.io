@@ -78,8 +78,39 @@
 
 
   
-<meta name="generator" content="Hexo 8.1.2"></head>
 
+  <!-- 浏览器语言检测与重定向 -->
+  <script>
+  (function() {
+    var lang = navigator.language || navigator.userLanguage || 'en';
+    var baseLang = lang.split('-')[0];
+    
+    // 支持的语言映射
+    var langMap = {
+      'zh': '/zh',
+      'en': '/en'
+    };
+    
+    var path = window.location.pathname;
+    var isLangPath = false;
+    for (var key in langMap) {
+      if (path.indexOf(langMap[key]) === 0) {
+        isLangPath = true;
+        break;
+      }
+    }
+    
+    if (!isLangPath) {
+      var targetLang = langMap[baseLang] || '/en';
+      var newPath = targetLang + path;
+      if (path === '/') {
+        newPath = targetLang + '/';
+      }
+      window.location.href = newPath;
+    }
+  })();
+  </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>
   
