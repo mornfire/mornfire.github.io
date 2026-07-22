@@ -91,19 +91,41 @@
 
   
 
-  <!-- 随机横幅图轮换 -->
+  <!-- 更稳定的随机横幅图轮换 -->
   <script>
   (function() {
-    var bannerCount = 16;
+    var bannerCount = 15;
     var randomIndex = Math.floor(Math.random() * bannerCount) + 1;
     var imgUrl = '/img/banner/banner-' + randomIndex + '.jpg';
 
-    window.addEventListener('load', function() {
+    function setBanner() {
       var banner = document.querySelector('.banner');
       if (banner) {
+        // 如果存在 .banner，直接改背景图
         banner.style.backgroundImage = 'url(' + imgUrl + ')';
+        return;
       }
-    });
+      // 备选方案：找包含 background-image 且有 banner_img 的元素
+      var allElements = document.querySelectorAll('[style*="background-image"]');
+      for (var i = 0; i < allElements.length; i++) {
+        var el = allElements[i];
+        var bg = window.getComputedStyle(el).backgroundImage;
+        if (bg && bg.indexOf('default.png') !== -1) {
+          el.style.backgroundImage = 'url(' + imgUrl + ')';
+          return;
+        }
+      }
+    }
+
+    if (document.readyState === 'complete') {
+      // 页面已加载完，直接执行
+      setTimeout(setBanner, 100);
+    } else {
+      // 页面加载中，等加载完再执行
+      window.addEventListener('load', function() {
+        setTimeout(setBanner, 100);
+      });
+    }
   })();
   </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
