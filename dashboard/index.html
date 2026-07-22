@@ -82,6 +82,22 @@
 
 
   
+
+  <!-- 随机横幅图轮换 -->
+  <script>
+  (function() {
+    var bannerCount = 16;
+    var randomIndex = Math.floor(Math.random() * bannerCount) + 1;
+    var imgUrl = '/img/banner/banner-' + randomIndex + '.jpg';
+
+    window.addEventListener('load', function() {
+      var banner = document.querySelector('.banner');
+      if (banner) {
+        banner.style.backgroundImage = 'url(' + imgUrl + ')';
+      }
+    });
+  })();
+  </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>

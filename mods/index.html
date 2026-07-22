@@ -26,8 +26,8 @@
 <meta property="og:site_name" content="MFoC 服务器">
 <meta property="og:description" content="📦 模组百科MFoC 服务器核心模组列表。  核心技术   模组 简介    机械动力 (Create) 服务器技术核心，包含飞艇、大炮、核电等附属   农夫乐事 (Farmer’s Delight) 农耕烹饪基础模组   森罗物语 (Kaleidoscope Cookery) 中式炒菜、酿酒、酒馆经营   车万女仆 (Touhou Little Maid) 女仆随从，接入 DeepSeek V">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-07-16T12:53:40.621Z">
-<meta property="article:modified_time" content="2026-07-16T12:53:40.621Z">
+<meta property="article:published_time" content="2026-07-22T06:45:56.136Z">
+<meta property="article:modified_time" content="2026-07-22T06:45:56.135Z">
 <meta property="article:author" content="MFoC 管理组">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -80,6 +80,22 @@
 
 
   
+
+  <!-- 随机横幅图轮换 -->
+  <script>
+  (function() {
+    var bannerCount = 16;
+    var randomIndex = Math.floor(Math.random() * bannerCount) + 1;
+    var imgUrl = '/img/banner/banner-' + randomIndex + '.jpg';
+
+    window.addEventListener('load', function() {
+      var banner = document.querySelector('.banner');
+      if (banner) {
+        banner.style.backgroundImage = 'url(' + imgUrl + ')';
+      }
+    });
+  })();
+  </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>
@@ -757,10 +773,6 @@
 <td align="left">Terralith + Tectonic</td>
 <td align="left">地形重做</td>
 </tr>
-<tr>
-<td align="left">YUNG 全家桶</td>
-<td align="left">结构重制</td>
-</tr>
 </tbody></table>
 <hr>
 <h2 id="辅助与优化"><a href="#辅助与优化" class="headerlink" title="辅助与优化"></a>辅助与优化</h2><table>
@@ -783,10 +795,6 @@
 <td align="left">组队领地</td>
 </tr>
 <tr>
-<td align="left">Lightman’s Currency</td>
-<td align="left">经济系统</td>
-</tr>
-<tr>
 <td align="left">Jade &#x2F; JEI &#x2F; Xaero 地图</td>
 <td align="left">信息辅助</td>
 </tr>
@@ -800,10 +808,6 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">Create Aeronautics</td>
-<td align="left">物理飞艇</td>
-</tr>
-<tr>
 <td align="left">Create Big Cannons</td>
 <td align="left">大炮系统</td>
 </tr>

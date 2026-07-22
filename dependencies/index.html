@@ -80,6 +80,22 @@
 
 
   
+
+  <!-- 随机横幅图轮换 -->
+  <script>
+  (function() {
+    var bannerCount = 16;
+    var randomIndex = Math.floor(Math.random() * bannerCount) + 1;
+    var imgUrl = '/img/banner/banner-' + randomIndex + '.jpg';
+
+    window.addEventListener('load', function() {
+      var banner = document.querySelector('.banner');
+      if (banner) {
+        banner.style.backgroundImage = 'url(' + imgUrl + ')';
+      }
+    });
+  })();
+  </script>
 <meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>
@@ -770,7 +786,7 @@
 <tr>
 <td align="left">环境&#x2F;域名&#x2F;代码&#x2F;重写改错&#x2F;AI调教&#x2F;灵感执行</td>
 <td align="left">Mornfire</td>
-<td align="left"><a href="mailto:&#x6d;&#x6f;&#x72;&#x6e;&#x66;&#x69;&#114;&#101;&#x40;&#x4f;&#117;&#116;&#108;&#111;&#x6f;&#x6b;&#46;&#x63;&#111;&#109;">mornfire@Outlook.com</a></td>
+<td align="left"><a href="mailto:&#x6d;&#111;&#114;&#x6e;&#x66;&#x69;&#114;&#x65;&#x40;&#x4f;&#x75;&#116;&#108;&#x6f;&#111;&#x6b;&#46;&#x63;&#111;&#109;">mornfire@Outlook.com</a></td>
 </tr>
 </tbody></table>
 
